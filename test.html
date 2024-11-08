@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elektronika Shop</title>
+    <style>
+        /* Základní styl pro stránku */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        /* Styl pro horní menu */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        header nav {
+            margin-top: 10px;
+        }
+
+        header nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Styl pro hlavní obsah stránky */
+        .main-content {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px 20px;
+        }
+
+        .product-list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            width: 80%;
+        }
+
+        .product-item {
+            background-color: white;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .product-item h3 {
+            font-size: 20px;
+            margin: 15px 0;
+        }
+
+        .product-item p {
+            font-size: 16px;
+            color: #666;
+        }
+
+        .product-item .price {
+            font-size: 18px;
+            color: #333;
+            margin-top: 10px;
+        }
+
+        /* Styl pro patičku */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Horní menu -->
+    <header>
+        <h1>Elektronika Shop</h1>
+        <nav>
+            <a href="#">Produkty</a>
+            <a href="#">O nás</a>
+            <a href="#">Kontakty</a>
+            <a href="#">Nápověda</a>
+        </nav>
+    </header>
+
+    <!-- Hlavní obsah -->
+    <div class="main-content">
+        <!-- Sekce pro produkty -->
+        <div class="product-list">
+            <div class="product-item">
+                <img src="https://images.unsplash.com/photo-1507639254130-6ca7e5b7b9d1?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fGhvbWUlMjBpbmZvfGVufDB8fHx8fDE2OTEzMzg5MzM&ixlib=rb-1.2.1&q=80&w=1080" alt="Chytrý telefon">
+                <h3>Chytrý telefon</h3>
+                <p>Popis produktu, skvělé funkce a design.</p>
+                <div class="price">5 999 Kč</div>
+            </div>
+            <div class="product-item">
+                <img src="https://images.unsplash.com/photo-1560387344-cc1a2e7b3628?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDN8fGJlc2RyYXdlc3MlMjBzaWxvYyUyMGhlYWRwaG9uZXxlbnwwfDB8fHx8fDE2OTEzMzkwMzM&ixlib=rb-1.2.1&q=80&w=1080" alt="Bezdrátová sluchátka">
+                <h3>Bezdrátová sluchátka</h3>
+                <p>Vysoká kvalita zvuku a pohodlné nošení.</p>
+                <div class="price">1 299 Kč</div>
+            </div>
+            <div class="product-item">
+                <img src="https://images.unsplash.com/photo-1570012104704-7473fd9d0602?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDk5fHxjYXB0b3B8ZW58MHx8fHx8fDE2OTEzMzkwNzI&ixlib=rb-1.2.1&q=80&w=1080" alt="Laptop">
+                <h3>Laptop</h3>
+                <p>Vysoký výkon pro práci i zábavu.</p>
+                <div class="price">12 999 Kč</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Patíčka -->
+    <footer>
+        <p>&copy; 2024 Elektronika Shop | Všechna práva vyhrazena</p>
+    </footer>
+
+</body>
+</html>
