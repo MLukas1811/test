@@ -13,6 +13,15 @@
             margin: 0;
             font-family: Arial, sans-serif;
             background-color: #f0f0f0;
+            flex-direction: column;
+        }
+        .top-line {
+            width: 100%;
+            height: 5cm; /* Výška linky */
+            background-color: rgba(0, 0, 0, 0.5); /* Černá barva s 50% průhledností */
+            position: absolute;
+            top: 0;
+            left: 0;
         }
         .container {
             text-align: center;
@@ -29,6 +38,7 @@
     </style>
 </head>
 <body>
+    <div class="top-line"></div>
     <div class="container">
         <div class="emoji">:(</div>
         <div class="message">Údržba</div>
